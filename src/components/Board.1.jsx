@@ -1,6 +1,6 @@
 import Square from './Square';
 
-const Board = ({ squares, handleSquareClick }) => {
+export const Board = ({ squares, handleSquareClick }) => {
   const renderSquare = position => {
     return (
       <Square
@@ -30,5 +30,3 @@ const Board = ({ squares, handleSquareClick }) => {
     </div>
   );
 };
-
-export default Board;
