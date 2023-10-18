@@ -1,4 +1,5 @@
-const StatusMessage = ({ squares, isXNext, winner }) => {
+const StatusMessage = ({ gamingBoard, winner }) => {
+  const { squares, isXNext } = gamingBoard;
   const noMovesLeft = squares.every(squareValue => squareValue !== null);
 
   const nextPlayer = isXNext ? 'X' : 'O';
